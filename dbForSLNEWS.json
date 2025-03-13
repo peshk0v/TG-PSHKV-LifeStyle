@@ -1,4 +1,5 @@
 [
   {"title":"DEBUG", "text":"Hello From GitHub!", "date":"05.03.25"},
-  {"title":"От Разработчиков", "text":"Beta тест лаунчера был запущен!", "date":"05.03.25", "image":"https://github.com/peshk0v/TG-chizn_razraba/blob/main/Logo.png?raw=true"}
+  {"title":"От Разработчиков", "text":"Beta тест лаунчера был запущен!", "date":"05.03.25", "image":"https://github.com/peshk0v/TG-chizn_razraba/blob/main/Logo.png?raw=true"},
+  {"title":"От Разработчиков", "text":"Beta тест новостей лаунчера был запущен!<br>Мы сделали новые стили вкладки новостей, и добавили анимации!", "date":"13.03.25", "image":"https://wallpapers.com/images/hd/beautiful-minecraft-cherry-blossoms-8zlaxmeiqm93j24f.jpg"}
 ]
