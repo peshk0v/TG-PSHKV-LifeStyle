@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peshk0v - Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="animate-on-load">
+        <div class="container">
+            <div class="profile">
+                <h1 class="animate-delay-1">Привет!</h1>
+                <p class="tagline animate-delay-2">Я начинающий программист, увлечённый созданием интересных проектов</p>
+                
+                <div class="social-links animate-delay-3">
+                    <a href="https://t.me/pshlst" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://discord.gg/TuQxJR3P" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://modrinth.com/user/peshk0v" target="_blank"><i class="fas fa-cube"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about" class="animate-on-load">
+        <div class="container">
+            <h2 class="animate-delay-4">Обо мне</h2>
+            <div class="card animate-delay-5">
+                <p>Я начинающий программист, увлечённый созданием интересных проектов и изучением новых технологий. Занимаюсь переводом Minecraft модов и публикую их на Modrinth.</p>
+                
+                <h3>Мой стек технологий:</h3>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC2ElEQVR4nO2az2tTQRDHV6yigj8O4m//ll4Fa2YiBvRU1Fr9G4SyM7GCpdZ6Fap40Iv3VkFBrKKgSBFUBMWLtAppa3bS1psr+1qtti9pNnnJvtR8YU6P99jPzOy+2Z1Vqq11Kpsb2ioZfUKArwvQc0H6LEizBumnAE0L0gdBuiuQ7ylkBrartMnm9GZB0ga5IMi2SjMC1Gc7dYdKg0pZvUeAXnoA/GMG+Gnw6NhO3bGYQrVBLBs9sMpuCAYiQGfrh1i0UjZ/MhiIQRpfMaDR+aw+5EyAxrxSDPlhMBBBkr8H4wB+P1uAS4e9ogI8ExCEbWIgyDY1IAI05gAiCOD7rQuC9VkbpF6tm4hUq6AgtvfGJkG+4EqIqC5K2PvlQKT8cxP9t4DOV12fzWX79xvkiWYM3gPE/jHg13M5va8ixGSX3maA3jcbwgsEXSVAb922oSyIAA2FgPAFkchoMBbiO+hdgjTXMiDApdnclZ0x0cj3hIKoLSJsDebPxIDw7VYDEaCbq0AM8ptQEAZoyqWJeEeEJ1aDAE2FiwgNRgcX6A0yGQPCP0JEQpCvzmf0AUH+WMP7C4mBGOAvzpu1HCJMH9E7liLhDSHlQfxTy0HMH+0/KEjDBvhr0yOKcalVy2SPvEnDzQaQSpNdkG/5fsilU4hIyDLISCLHO0sOsMFAMnR6FYjz7sqTkXSDkLjFInYVcUthq4AYpIHKZTzyu7SDmLXKeCe3aXGblxSDvCodu7xXVX1Ajfleg/xEgIrBQYCK0ViQztncvY2qEfJJw1RLEva+aoPUqf85IqOV+iiqVUDWaj+oYCDAMwmCmGAgBumR5z+hbB/FID8OBlJEOpXURDdI3cFAXGvZNTMTgBhv2F+7Wrly2gA9qxkE+IV06d0qDYpaEUB9Pm0Ig/RNgC+6d1XaVHAbNHf8CnzHXaRxd1SiizVIswL0aannck1QH7fdekvo8balGqRfs8cFQawwJBAAAAAASUVORK5CYII=" alt="python">
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrUlEQVR4nO2au2sUURTGBxO1iopEBVF8gK2I2EeLQMRkz5nVabRRIipWNoKgcM/ZEEwaURsVxMbKVfCBf4Bgo42F/0HwhUlM5pxJUvjIyt1EMjv7SpRhJng/uM3eOXfP7/vmDneZ9TwnJ6cVSYPhLYL0RJFmFLmSr0Ez1d76TXdbkAWIrBvmlkOAy+0TyWUSXDuAo2WA5KBRbD8ciOYgBXWJYPbOq0sEs3dbXSIxZe20ukQSytppdYkklLXT6hJJKGun1SWSUJquNbpGkJ8K8lH7E7vSYzpnC2a7+HxMgJ6tZO3MQAT4lxToTMtegAbtdbkGUeQbbZvxPE+ArucWRJDm52BoZ2LuggI9FOBLlaDcYT+b9c0OBXqZXxDgr/HPowIfSeybuwp8UZEl13tEkD/VgIA5/K9rZwXyY7LPbEjMXROguVUFUh1Ag8n5aGB4myCXFGhy1YAI0HhYNHsb9TBRGO1S5CsKFOYeZPEWm7AbvVkvUiztE6T3uQdZgKF5RX4+7ZuDjfoJA7NZkcdyD5K43V6FPvfW1QGdzwxEgH7+7dqCXIrXTYPZnTrI4iPTPjrvJObG4utW+m6tT9SNRz4Hgvy4bl2gsKY2MOtSBqEX0wNDe6pf1mM6BXnENqjA3wRKp+PrThWHdi1BcNmedhfd3iRI72oh+XW8NvLN1pRBTNFbpkKfTi05zsfr0oLSWUW+LUiX7Qav6algTqQKIkCf/yTSShVj1ijw25jjX5KHxqa15+6tTSaWzh5B+jgD5kAbiJv1JvCHaMDsb9XLRGG0q+EeSuupJUDfBfm+PfzZe966aB0PoXRSkd60qlPkB6Fv+uzxpBKUO6aCkY1hwRxSpKvWpGa1qYBkMbz/5mWoNLknV9/r6X7TXYUBjvKYhAA9WtYfBpycnLy4fgOgk+xX2/YO2QAAAABJRU5ErkJggg==" alt="javascript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACSklEQVR4nO2Zv2sUQRTHT0RsbEwjoiAIBoJY+IuA2AgWwSM7bw4OTLAKGBBFG0G7eW8uYqcINgnaWNoK4n+gf4CVvwq7ePkx89Y0Bl2Z2d27cxXuLMLs6Xzhwb7hzdv9vO8sd9w1GlFRUX8lI/S8BeoyUFbHsEBdAzg3FKTOEFzCCPwyFCT0Q/KIEUG4Bi5wdATCT56jIxB+2hwdGVDoSXN0pKLQk+boSEX/jyMC11jQRwayv+WC1v11JSzgD/+t2tfhRr9XWY9r+Rryr/kOgljAW67OAi77XNBtnwt6zEB3/9TTCvxmQV/J9+mFslcq9eX8nnit6LXiayTdDApigZ6kibpomvf3uzUj6azLLdC2ldTM++upspdpqaO+Tuj5WoFwOemELvhegl739iU07dayRrbLHSkraLXvmLoUDIQBH7rzboBujAQCarJ0gAFfsaAX2eLyni2pDluhzgUDqWoYiGmrCXeEsplHe63AjgXSm4k+mQp9Ip3Vx4OBbLQ6Rwzo0+nsvQPDQKyg71n7+e5U4vVNqU4xkEgltRnwqknUma3m0qHxeEcErec53mHQi/44gZpkgU8Z1PnVtto3HiBA7/Ma7DDQs/5Lj++MVDN5P9oeAxB8U/R+wICf3PVXuXTQ10pqFyDdHkhLH3PrLizg5/qACHxZ1Kz4PQlN9z4EQS8Ux+5DCTIoC/h2R0DqEo0IAuFd4OgIhJ88R0cg/LQ5OjKg0JPm6EhFoSfN0ZGKQk+aoyP/6t/TBnDOFdYZIi1+2IuKimqMrJ/AbPLW236pcgAAAABJRU5ErkJggg==" alt="html">
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiklEQVR4nO2Zv2sUURDHVxD8gVqpAUUstLW0EcFOIyY3s+LhDwwRxMaAhRaioG/mkkPiD8TGQq3F0spCsPEfsLGx8QchirmgO3MkBn+tzO7dubkY4g/iW8L7wmtm9r29z3zfzrLvoigoKOiPlEDtmCA3FDkt4xDkRoJ0dEGQMkNoGwZoYkEQ3z9Sf3MEEC2BCxocQf+V1+AI+q+2BkcK8l1pDY50yXelNTjSJd+V1jI4IsCfFOmlIM10YkjfBXhMgKZnX0tf87jNKQmIIM00YxpKB91KWyMB3pfn6OZkr1tnsbT31goBemtgCnQprd5YZfH3VbemCK5eQYAGbG6zv94jWDsuwLcF+Em2XrW+QYFOCvL+HILvW3wahrco0qlmzNVSOCJIz9MoXWYVVqDXnRzQeVtPgO/Mhq6dyOP0sGTPCF3L3AA63AU4mq/ndtsX3c84n81A0PUpspQGpBnTUDYP+OKsHNDkh4PDWy03VXGbBOlpK/dG+9x6iyf9brsgPysFiAKfbs27PPfZsa7kdlm+URldq8ivWnNeNKG2I3MydhsN2juIAF3JtgrQwDz5z7aN8u1E9UJuqg0pyPe8gyjQ404bBR6bx7WrOSyPdEGeawHe9Q4iwN+SmHdm26S/3pOdi+Wd6rpW3CFBGrR3SbrHLc+fB7rQjGtHrE3be2e8z63ubDn06UjeicYTdHutDdsadoAmMZ9przl1YGSzID+wa627teMJDm9ToEd/c89oMUAK46N1JUH+0tp2iQC/+8V2nPzXg8BokUH+24gCCPp3QYMj6L/yGhxB/9XW4EhBviutwZEu+a60Bke6tGQckaXy93Ri3xKFU4+yDQGasA+zBUGCgoKion4AC8l1rcAxXakAAAAASUVORK5CYII=" alt="css">
+                        <span>CSS</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpElEQVR4nO2YXUrDQBDH9wDeQRE/EUUEQa2CLz7GmQQ8z+7EU9Tr6DWEFvygatvspL6IENmU+qJQaGqmkfnDvIUwv/nP7CRrjEr1N+pd2SUPdMPoBoxUNCvcwKNrBwYzhpBOqFp4dG3DQH3pRCoHUN+IJzGnMNIJKAj+V0dUiyb+L63FC5CEgqA6QuItxDojKF9tVkdwehWymC6GYFcY6F7aDa60R8BiWKiD5HqZkbrNBUF6z8Gef8OA6zQVpGB0IwY6CzA+Sdc9uKeGglDB4LIspsMS5jLd9EDPzQTBMobD2B4EmDyyewzurakghQf3kkfpToAZgd2v+1LDzA0E6TUAlC2GdsOje2gciAfq5ZDulv83id3ySI91QvA8QMJwT1qKMd2WOrlMxRd0s8iuTeYitJcEBFfb7K6TJXY1QIQTS+Kk4qogHtxH2OblYMf2KOySn8/Yk5nuEBJq1Qny6ZGOPVDE6PjX5xJqzXYZYk/rba0FCyOdgIKgOkLi7cM6IyhfaVZHUL66rI6gfEXVERwXwXhwd9LVrBoe6HaWD1SVykzXF6g4F13Un/ElAAAAAElFTkSuQmCC" alt="console">
+                        <span>Bash</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFL0lEQVR4nO1aaWhcVRS+tmrdF1TEtVgtIggKolJFREWsNplzZmBUUFpxaf/oDwXxh8o95yVpbatgQERFLBRErdSFirig9p/+S1GqUsFqpaaxbTL3TpLGNvbJeUuc5S3zJjPJE/rB/TH3vbt899yzvlHqGNLhrn79BHf54CL1f0S1qK+2SJsM8LBFdr0GXDXIQxZ4Q6Wkl6i8w6DzsAH+e4ZARJPnBvkplVdUC3ybAZpOIlHXgB5ReYOr3OMM0I6WSfhtbH9h/ekqTzDIyzKSCKTiPKryBAO8tkYH/pHWoBdNfX4/vafyBAv0qb85GjUlZ6kpOFfK1YnvmyHyl1xLlRdYpF+9jSE9PdMH9ExcX20bLfUtVnmBRRr1Nl1yloZ9gQQi++qkUtAFlRcYoMOyKXeVPskgv2+RN4tH9/qWDy6SPtEHeR5hhp9XeYENNjUJfZcY4EO+ctNkqNAG+YhFGp8o6AubJIL0gcoLbM2moqxTQGjSAH0U8Wy3ygts/QkfNUDrbI8+d7zoXGORnjVAfyb5E5GkygNszaaqRef+qCjYoO6JI1JBflzlAbZOeXlDo2+oYN/lBnhrfCBJO+bdn1RKekmzAvNrB5brM3zlpo2hVUtpMK9ELPKLaZsUvbFIb4f+JuadPaPlF86cFxIV1Dc0hu4GeESuikjBIE1Z4M/lPXnfFJyVyYT5zTkn4d6qj48J3Z9LGmeBtyVJziDfPcdXylkd4aUPVFasOztp3MSK/ossUCVe8XnYlgfOmxMSblmfaIF+azKjQE+0Mt4iPZasV7RpPqWxS/xFK+NdrRcY4J8SjUOJb+46kahNVNG5N9McaYoPtL27lqrI10dKQ+sF2Y0F/5FixZZ1jYgFGmxXN5rn4peTpcJbO88gjJmARxoWOyRevJ35LPAtKY50qt25s1dLgLe1O1+g9HUHYxulXaQHOssiJueebUnnv8JFrNK/ozoNg/xu04mhc93s5qT1iT4FaFfnGMwsykNNRFI8efqczoMpEplUnYaEDuOgrw0KDN5C48X+C2Yzp2SHVeA7hu/ceKr8lvJQFeg+SYuDbHNadQuSBEkC1Vi36jSqRS5boC86OqkFjZ5HBxp0y1sWSp9B/tAi2draVTsQKVvk34Pqy4/iX7qSmxjg3toszwC/Iv1SYDDIe6XSKIWGWZlhpO/rdKPgrOwsCaRVjamqnzfoHnleAb4rCCeOyHUL73rL8weVRu+wkPYZ5P0GuF+ur4QxWWO4OligNRb4W8kvErzuPoNrz/HeR95c078ni0mWulbUNXK9by78qkHeOQsifDA5X6hPTcWa1Y4RM91qyBNc1R9EwmOgz5LDqRb17ZIih9Kv9g6c3x6RmhNOiYWOSrzkk6c1Nc8mWllHJNHKOhboE7f80smZiRjQ97S0gH/6OyVj9K4C0tfBCb/RyjpRtWAb337JXLmPKv+nSGbAO+EefamE9KF5ToNkgVnWscDVjEToyUxEgKZNgW/0yJT6FielvCK9Sq++oo11JjIHqBKoZTop/zp95Y1F5yq5bvL5eaKoLw7nFGn5uT79HNa5LNJnrerIWG/fZZlIeCcFtD0rEYtsZOxIWZ/WIK3DjX4oTJaSykLWb7tn9UVLnJqcnoTtvudu6f4elLGyybR39/boUwIisX7KIr/V8exQqulBLerjuL9oSNwVhhsS2ie1sPJukL+JMBxTBpyHVLchDkssk3h+CUs8RUf+sp2PNUFKMOR/mhMi9J0BfZOaa8jHzY7MU96yUKyZOgal/gVClV2ehKu9LgAAAABJRU5ErkJggg==" alt="linux">
+                        <span>Linux</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACM0lEQVR4nO2azW7TQBDHzaFwoLwAcEU8CVIlJM+41MAT9AT3Ug6esRBJhXrgyBEhIUAILnDhzmMgVKkfQlXV7JicjcZJoEVxbNfxblrtXxop2sxu5re7M+tNEgQtJGGyZpAPBZPVs46RRRwL8lCA7wWulAE9EORcgI+GYXK9aX/to311jAzT+4FLCfLXEQx9y4P8kq2+c9fw7rMbgnysAQ2QHw2iZEWAtgX5uwD/EKTfhRWvtY221Ud9CwjkYx0jWAQNgB6Pg2ps2jdYBGURx6OEPxvIaDXTdWcAeZxcNsjvWgCcNuC3+fqrJRcQn+cG8ReGvuQrL69YAxGgN1MC2Ti48+KqAG9WB01Pyn3ptRWILEofTgvuV5ws6/uH4da1KpBK3zBZ63xLCfJO2SxrgIL0tEY+bFb4/uw0X8pWowvLIo47AzHAH2yBGKD3nYF4uVJenBO0ZYD2DfDBpN3WtpKxTT5XYzDIewa5r7HVBtEO0wZ0BSIncwe5Xx8EaH9hQeDfDqlUnQFdgciJdg8ifkXYby2VzxHxVYt9+RV/jsyQzxH0OZL7HJklvcQs6tOvQdq9GBcroF7Tr0T7xfXyPF91y+QKZO66MCDmvyLQpZkmSd0YBKhnDQT4eWcgRREA6nW5MgZpVyHmktRe51XSsOo4q1JV8iDoV6QbCZKUbi+gQVt/azJIn2acBx/b+luTCdPbk78pnZ5dPjKr6a22/oFNDaPk5vhHUqOmMzsrqKb+dfUH/1USGNjq+ngAAAAASUVORK5CYII=" alt="android-os">
+                        <span>Android</span>
+                    </div>
+                </div>
+<!--                 
+                <a href="https://modrinth.com/user/peshk0v" class="btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Мои переводы на Modrinth
+                </a> -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="dark-section animate-on-load">
+        <div class="container">
+            <h2 class="animate-delay-6">Мои проекты</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card animate-delay-7">
+                    <div class="project-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>SakuraLauncher</h3>
+                    <p>Лаунчер для Minecraft, разрабатываемый с использованием современных технологий. Включает систему управления модами и автоматические обновления.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/peshk0v/SakuraLauncher" class="btn" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-delay-8">
+                    <div class="project-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Подготовка к экзаменам по химии</h3>
+                    <p>Сайт с тестами и структурированной информацией для подготовки к экзаменам. Включает систему проверки знаний.</p>
+                    <div class="project-links">
+                        <a href="https://peshk0v.github.io/biolKvantPro/" class="btn" target="_blank">
+                            <i class="fas fa-globe"></i> Сайт
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="interests" class="animate-on-load">
+        <div class="container">
+            <h2 class="animate-delay-8">Мои интересы</h2>
+            
+            <div class="interests-grid">
+                <div class="interest-item animate-delay-9">
+                    <i class="fas fa-code"></i>
+                    <h3>Программирование</h3>
+                    <p>Создание веб-приложений, работа с микроконтроллерами, автоматизация.</p>
+                </div>
+                
+                <div class="interest-item animate-delay-10">
+                    <i class="fas fa-cube"></i>
+                    <h3>Minecraft</h3>
+                    <p>Перевод модов, создание своих модификаций.</p>
+                </div>
+                
+                <div class="interest-item animate-delay-11">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Обучение</h3>
+                    <p>Постоянно изучаю новые технологии и улучшаю свои навыки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="goals" class="dark-section animate-on-load">
+        <div class="container">
+            <h2 class="animate-delay-12">Мои цели</h2>
+            
+            <div class="card animate-delay-13">
+                <ul class="goals-list">
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Стать <strong>FullStack-разработчиком</strong>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Создать проект, который станет популярным
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Продолжать развиваться в программировании и делиться своими достижениями
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="animate-on-load">
+        <div class="container">
+            <div class="social-links animate-delay-14">
+                <a href="https://t.me/pshlst" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://discord.gg/TuQxJR3P" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://modrinth.com/user/peshk0v" target="_blank"><i class="fas fa-cube"></i></a>
+                <a href="https://github.com/peshk0v/SakuraLauncher" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p class="footer-text animate-delay-15">
+                ⭐ Если тебе интересно то, чем я занимаюсь, не стесняйся связаться со мной! ⭐
+            </p>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>
