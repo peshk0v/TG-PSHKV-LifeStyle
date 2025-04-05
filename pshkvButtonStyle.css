@@ -1,0 +1,45 @@
+.pshkvlogo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #E08119;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 14px;
+    position: fixed; /* Фиксированное положение */
+    top: 10px; /* Отступ от верхнего края */
+    left: 10px; /* Отступ от левого края */
+    opacity: 0; /* Начальное состояние для анимации */
+    animation: fadeInPSHKVBTN 1s ease forwards; /* Анимация появления */
+}
+
+.pshkvlogo img {
+    margin-right: 6px;
+    border-radius: 50%;
+    width: 36px;
+}
+
+.pshkvlogo:hover {
+    background-color: #c96f14;
+    transform: scale(1.05);
+}
+
+.pshkvlogo:active {
+    background-color: #a85a10;
+    transform: scale(0.95);
+}
+
+/* Анимация появления */
+@keyframes fadeInPSHKVBTN {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Легкий сдвиг вверх */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
