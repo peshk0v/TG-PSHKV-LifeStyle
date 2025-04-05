@@ -1,17 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* Темы */
 :root {
     --dark-bg: #1a0a1a;
-    --primary: #ff2d75;
-    --primary-dark: #d4004e;
-    --secondary: #ff85b3;
+    --primary: #E08119;
+    --primary-dark: #b35f13;
+    --secondary: #f5a45d;
     --text: #f0e6f0;
     --card-bg: #2a0f2a;
+}
+
+:root.light-theme {
+    --dark-bg: #ffffff;
+    --primary: #E08119;
+    --primary-dark: #b35f13;
+    --secondary: #f5a45d;
+    --text: #1a0a1a;
+    --card-bg: #f5f5f5;
+    --footer-bg: #f0f0f0; /* Новый цвет для фона футера */
+    --footer-text: #1a0a1a; /* Новый цвет для текста в футере */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Comfortaa", sans-serif;
 }
 
 body {
@@ -19,6 +33,7 @@ body {
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -33,6 +48,7 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header::before {
@@ -55,17 +71,28 @@ header::before {
 h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #fff, var(--secondary));
+    background: linear-gradient(to right, #fff, var(--primary));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 0 10px var(--primary), 0 0 20px var(--primary);
+    }
+    to {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 0 20px var(--secondary), 0 0 30px var(--secondary);
+    }
 }
 
 .tagline {
     font-size: clamp(1rem, 3vw, 1.2rem);
     margin-bottom: 1.5rem;
     opacity: 0.9;
+    color: white; /* Используем переменную для текста */
 }
 
 .social-links {
@@ -85,19 +112,21 @@ h1 {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    text-decoration: none; /* Убирает подчеркивание */
 }
 
-.social-links a:hover {
+social-links a:hover {
     background: rgba(255,255,255,0.2);
     transform: translateY(-3px);
 }
 
 section {
     padding: 3rem 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark-section {
-    background: #120712;
+    background: var(--card-bg); /* Используем переменную для фона */
 }
 
 h2 {
@@ -106,6 +135,7 @@ h2 {
     color: var(--primary);
     position: relative;
     display: inline-block;
+    animation: slide-in 1s ease-out;
 }
 
 h2::after {
@@ -116,6 +146,17 @@ h2::after {
     width: 50%;
     height: 3px;
     background: linear-gradient(to right, var(--primary), transparent);
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .card {
@@ -131,6 +172,7 @@ h2::after {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-left: 3px solid var(--secondary);
 }
 
 .tech-stack {
@@ -170,12 +212,25 @@ h2::after {
     border: none;
     cursor: pointer;
     font-size: 0.9rem;
+    animation: pulse 2s infinite;
 }
 
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px var(--primary);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--secondary);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--primary);
+    }
 }
 
 .btn i {
@@ -205,7 +260,10 @@ h2::after {
 }
 
 .interest-item:hover {
-    background: #3a1a3a;
+    background: var(--primary-dark); /* Используем переменную для тёмного акцента */
+    color: var(--text); /* Убедимся, что текст остаётся читаемым */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
 }
 
 .interest-item i {
@@ -249,15 +307,74 @@ h2::after {
 }
 
 footer {
-    background: #0f050f;
+    background: #1a0a1a; /* Явно задаём тёмный фон */
+    color: #f0e6f0; /* Явно задаём белый текст */
     padding: 2rem 0;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-text {
-    opacity: 0.7;
+    opacity: 0.9; /* Увеличиваем видимость текста */
     font-size: 0.9rem;
     margin-top: 1.5rem;
+    color: #f0e6f0; /* Явно задаём белый текст */
+}
+
+/* Кнопка переключения темы */
+.theme-toggle {
+    z-index: 99999;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    color: var(--text);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--primary-dark);
+}
+
+/* Заглушка для анимации переключения темы */
+#theme-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+#theme-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    animation: theme-switch 0.5s ease forwards;
+}
+
+@keyframes theme-switch {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 /* Анимации */
