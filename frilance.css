@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.error-container {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.error-container h1 {
+    font-size: 8rem;
+    margin: 0;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    overflow: hidden; /* Скрываем текст, который еще не напечатан */
+    white-space: nowrap; /* Запрещаем перенос текста */
+    border-right: 4px solid rgba(255, 255, 255, 0.75); /* Эффект курсора */
+    animation: typing 1s steps(20, end), blink 0.5s step-end infinite alternate;
+}
+
+.error-container p {
+    font-size: 1.8rem;
+    margin: 20px 0 30px;
+    color: #ffe6e6;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.back-home {
+    text-decoration: none;
+    color: #fff;
+    background: #ff4e50;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: 1s;
+}
+
+.back-home:hover {
+    background-color: #ff4447;
+}
+
+.back-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; /* Начальная позиция внутри кнопки */
+    width: 0; /* Начальная ширина */
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Начинаем с нулевой ширины */
+    }
+    to {
+        width: 100%; /* Постепенно показываем весь текст */
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-color: transparent;
+    }
+}
