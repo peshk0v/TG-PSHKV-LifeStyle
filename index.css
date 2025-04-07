@@ -1,48 +1,49 @@
+/* Общий стиль */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif; /* Добавлен шрифт PT Sans */
+    font-family: 'PT Sans', sans-serif;
     background: url('indexBg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    animation: backgroundMove 20s linear infinite alternate; /* Анимация движения фона вперед и назад */
+    animation: backgroundMove 20s linear infinite alternate;
 }
 
 .container {
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     max-width: 700px;
-    margin: 100px auto;
+    margin: 50px auto;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease-in-out;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #ffc323;
     animation: slideInDown 1s ease-in-out;
 }
 
 p {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
     line-height: 1.6;
 }
 
 .buttons {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 12px 25px;
     margin: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: #000;
     text-decoration: none;
@@ -77,8 +78,8 @@ p {
 }
 
 .contacts {
-    font-size: 1.1em;
-    line-height: 1.8;
+    font-size: 1em;
+    line-height: 1.6;
     color: #fff;
     animation: fadeIn 2s ease-in-out;
 }
@@ -86,6 +87,50 @@ p {
 .contacts h2 {
     color: #ffc323;
     margin-bottom: 15px;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .contacts {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    .contacts {
+        font-size: 0.8em;
+    }
 }
 
 /* Анимации */
